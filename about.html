@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a propos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="image/logocoyg.jpg" alt="Logo" class="logo" onclick="window.location.href='index.html'">
+        <div class="nav-links">
+          <a href="maps.html">Mes Maps</a>
+          <a href="about.html">À Propos</a>
+          <a href="/contact.html">Me Contacter</a>
+        </div>
+        <button class="subscribe-btn">S'abonner</button>
+      </nav>
+    
+      <main class="main-content">
+        <h1 class="page-title">À Propos de Coygmap</h1>
+        
+        <section class="about-section">
+          <h2>Notre Histoire</h2>
+          <p>Bienvenue dans l'univers de Mes Maps Fortnite ! Depuis 2023, nous nous efforçons de créer des expériences de jeu uniques et immersives pour la communauté Fortnite. Notre passion pour le design de niveau et la narration interactive nous pousse à repousser constamment les limites de ce qui est possible dans le mode créatif de Fortnite.</p>
+          <p>Chaque map que nous créons est le fruit d'un processus créatif minutieux, combinant des concepts originaux, un level design soigneusement pensé et des mécaniques de jeu innovantes. Notre objectif est de vous offrir des aventures inoubliables, que vous jouiez seul ou avec des amis.</p>
+        </section>
+    
+        <section class="about-section">
+          <h2>Notre Créateur</h2>
+          <div class="creator-info">
+            <img src="image/simp.png" alt="Avatar du créateur" class="creator-avatar">
+            <div class="creator-bio">
+              <h3>Hugo "COYG"</h3>
+              <p>Passionné de jeux vidéo depuis son plus jeune âge, Hugo a découvert sa vocation dans la création de maps Fortnite. Actuellement en bachelor développeur web, il apporte une perspective unique à chaque projet. Son attention aux détails et sa créativité débordante sont la garantie de maps toujours plus surprenantes et amusantes.</p>
+            </div>
+            <a href="https://www.fortnite.com/@coyg" class="profil-btn">Voir le profil du créateur <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </section>
+    
+        <section class="about-section">
+          <h2>Nos Chiffres</h2>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-number">9+</div>
+              <div class="stat-label">Maps Créées</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3</div>
+              <div class="stat-label">Joueurs actuel</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">375.9K</div>
+              <div class="stat-label">Minutes Jouées</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">6,323</div>
+              <div class="stat-label">Rank</div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="about-section">
+          <h2>Notre Engagement</h2>
+          <p>Chez Mes Coygmap, nous nous engageons à :</p>
+          <ul>
+            <li>Créer des expériences de jeu uniques et mémorables</li>
+            <li>Maintenir un haut niveau de qualité dans chacune de nos créations</li>
+            <li>Écouter les retours de la communauté et améliorer constamment nos maps</li>
+            <li>Innover et repousser les limites du mode créatif de Fortnite</li>
+            <li>Favoriser un environnement de jeu sain et inclusif</li>
+          </ul>
+        </section>
+    
+        <section class="about-section">
+          <h2>Ce que disent nos joueurs</h2>
+          <div class="testimonial">
+            <p>"Les maps de Coygmap sont tout simplement incroyables. Chaque fois que j'en essaie une nouvelle, je suis émerveillé par la créativité et l'attention aux détails. C'est comme découvrir un nouveau jeu à chaque fois !"</p>
+            <p class="testimonial-author">- Emma L., joueuse passionnée</p>
+          </div>
+        </section>
+
+        <div class="popup-overlay" id="newsletterPopup">
+          <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2>Abonnez-vous à notre newsletter</h2>
+            <p>Restez informé de nos dernières maps et mises à jour !</p>
+            <form class="popup-form" method="GET" action="/subscribe-newsletter">
+              <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+              <button type="submit">S'abonner</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    
+      <footer>
+        <p>&copy; 2024 Coygmap. Tous droits réservés.</p>
+        
+      </footer>
+      <script src="about.js"></script>
+
+
+
+ 
+</body>
+</html>

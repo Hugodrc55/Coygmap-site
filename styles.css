@@ -1,0 +1,259 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    height: 40px;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #cccccc;
+  }
+  .subscribe-btn, .cta-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .subscribe-btn:hover, .cta-button:hover {
+    background-color: #cccccc;
+    color: #000000;
+  }
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .hero-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://websimengine.com/fortnite-background.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .hero-content {
+    background-image: url(image/pattern.jpeg);
+    padding: 9rem;
+    border-radius: 30px;
+
+  }
+  .hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-section p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+  }
+  .features-section, .popular-maps-section, .testimonials-section, .news-section {
+    margin-bottom: 4rem;
+  }
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .features-grid, .maps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  .feature-card, .map-card {
+    background-color: #111111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover, .map-card:hover {
+    transform: translateY(-5px);
+  }
+  .feature-card h3, .map-card h3 {
+    margin-top: 0;
+  }
+  .map-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .testimonial-card {
+    background-color: #111111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+  }
+  .testimonial-author {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .news-card {
+    background-color: #111111;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .news-content {
+    padding: 1.5rem;
+  }
+  .news-date {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+  }
+  .community-section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .community-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .community-link {
+    background-color: #111111;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .community-link:hover {
+    background-color: #222222;
+  }
+  footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .social-links a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  .social-links a:hover {
+    color: #cccccc;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .popup-content {
+    background-color: #111111;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .popup-form input {
+    padding: 0.5rem;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  .popup-form button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .popup-form button:hover {
+    background-color: #cccccc;
+  }
