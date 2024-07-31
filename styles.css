@@ -194,8 +194,14 @@ body, html {
     font-size: 1.5rem;
     transition: color 0.3s ease;
   }
-  .social-links a:hover {
-    color: #cccccc;
+  .social-links #twitter a:hover {
+    color: #0a82df;
+  }
+  .social-links #inst a:hover {
+    color: #df0ad1;
+  }
+  .social-links #yt a:hover {
+    color: #cc0a0a;
   }
   .popup-overlay {
     position: fixed;
